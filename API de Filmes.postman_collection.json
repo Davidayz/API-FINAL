@@ -1,0 +1,837 @@
+{
+  "info": {
+    "_postman_id": "19a66683-529e-4f54-bc11-4809ec4a544b",
+    "name": "API de Filmes",
+    "description": "Collection completa da API de Filmes com endpoints GET e POST",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "53365132",
+    "_collection_link": "https://go.postman.co/collection/53365132-19a66683-529e-4f54-bc11-4809ec4a544b?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "GET",
+      "item": [
+        {
+          "name": "Listar todos os filmes",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/filmes",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "filmes"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Filtrar por genero - Drama",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/filmes?genero=Drama",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "filmes"
+              ],
+              "query": [
+                {
+                  "key": "genero",
+                  "value": "Drama"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Filtrar por genero - Crime",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/filmes?genero=Crime",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "filmes"
+              ],
+              "query": [
+                {
+                  "key": "genero",
+                  "value": "Crime"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Filtrar por genero - Ficcao Cientifica",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/filmes?genero=Ficção Científica",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "filmes"
+              ],
+              "query": [
+                {
+                  "key": "genero",
+                  "value": "Ficção Científica"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Buscar por titulo parcial",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/filmes?titulo=matrix",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "filmes"
+              ],
+              "query": [
+                {
+                  "key": "titulo",
+                  "value": "matrix"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Filtrar por nota minima",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/filmes?nota_min=8.8",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "filmes"
+              ],
+              "query": [
+                {
+                  "key": "nota_min",
+                  "value": "8.8"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Ordenar por nota decrescente",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/filmes?ordem=nota&direcao=desc",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "filmes"
+              ],
+              "query": [
+                {
+                  "key": "ordem",
+                  "value": "nota"
+                },
+                {
+                  "key": "direcao",
+                  "value": "desc"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Ordenar por nota crescente",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/filmes?ordem=nota&direcao=asc",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "filmes"
+              ],
+              "query": [
+                {
+                  "key": "ordem",
+                  "value": "nota"
+                },
+                {
+                  "key": "direcao",
+                  "value": "asc"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Ordenar por titulo A-Z",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/filmes?ordem=titulo&direcao=asc",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "filmes"
+              ],
+              "query": [
+                {
+                  "key": "ordem",
+                  "value": "titulo"
+                },
+                {
+                  "key": "direcao",
+                  "value": "asc"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Paginacao - pagina 1 limite 5",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/filmes?pagina=1&limite=5",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "filmes"
+              ],
+              "query": [
+                {
+                  "key": "pagina",
+                  "value": "1"
+                },
+                {
+                  "key": "limite",
+                  "value": "5"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Filtro + Ordenacao + Paginacao combinados",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/filmes?genero=Drama&ordem=nota&direcao=desc&pagina=1&limite=3",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "filmes"
+              ],
+              "query": [
+                {
+                  "key": "genero",
+                  "value": "Drama"
+                },
+                {
+                  "key": "ordem",
+                  "value": "nota"
+                },
+                {
+                  "key": "direcao",
+                  "value": "desc"
+                },
+                {
+                  "key": "pagina",
+                  "value": "1"
+                },
+                {
+                  "key": "limite",
+                  "value": "3"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Buscar por ID - sucesso (id=1)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/filmes/1",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "filmes",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Buscar por ID - 404 (id=999)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/filmes/999",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "filmes",
+                "999"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "POST",
+      "item": [
+        {
+          "name": "Criar filme #1 - Oppenheimer",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"titulo\": \"Oppenheimer\",\n  \"diretor\": \"Christopher Nolan\",\n  \"ano\": 2023,\n  \"genero\": \"Drama\",\n  \"nota\": 8.9\n}"
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/filmes",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "filmes"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Criar filme #2 - Dune Parte 2",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"titulo\": \"Dune: Parte 2\",\n  \"diretor\": \"Denis Villeneuve\",\n  \"ano\": 2024,\n  \"genero\": \"Ficção Científica\",\n  \"nota\": 8.5\n}"
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/filmes",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "filmes"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Criar filme #3 - Ainda Estou Aqui",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"titulo\": \"Ainda Estou Aqui\",\r\n  \"diretor\": \"Walter Salles\",\r\n  \"ano\": 2024,\r\n  \"genero\": \"Drama\",\r\n  \"nota\": 8.7\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/filmes",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "filmes"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Criar filme #4 - Poor Things",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"titulo\": \"Poor Things\",\r\n  \"diretor\": \"Yorgos Lanthimos\",\r\n  \"ano\": 2023,\r\n  \"genero\": \"Comédia\",\r\n  \"nota\": 8.0\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/filmes",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "filmes"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Criar filme #5 - Saltburn",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"titulo\": \"Saltburn\",\r\n  \"diretor\": \"Emerald Fennell\",\r\n  \"ano\": 2023,\r\n  \"genero\": \"Suspense\",\r\n  \"nota\": 7.4\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/filmes",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "filmes"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "ERRO - Campos obrigatorios ausentes",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{}"
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/filmes",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "filmes"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "ERRO - Nota maior que 10",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"titulo\": \"Teste\",\n  \"diretor\": \"Diretor\",\n  \"ano\": 2020,\n  \"genero\": \"Drama\",\n  \"nota\": 15\n}"
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/filmes",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "filmes"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "ERRO - Nota negativa",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"titulo\": \"Teste\",\n  \"diretor\": \"Diretor\",\n  \"ano\": 2020,\n  \"genero\": \"Drama\",\n  \"nota\": -1\n}"
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/filmes",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "filmes"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "ERRO - Nota como string",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"titulo\": \"Teste\",\n  \"diretor\": \"Diretor\",\n  \"ano\": 2020,\n  \"genero\": \"Drama\",\n  \"nota\": \"oito\"\n}"
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/filmes",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "filmes"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "PUT",
+      "item": [
+        {
+          "name": "Atualizar filme id=1",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"titulo\": \"O Poderoso Chefao\",\n  \"diretor\": \"Francis Ford Coppola\",\n  \"ano\": 1972,\n  \"genero\": \"Crime\",\n  \"nota\": 9.5\n}"
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/filmes/1",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "filmes",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Atualizar filme id=3",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"titulo\": \"Parasita\",\n  \"diretor\": \"Bong Joon-ho\",\n  \"ano\": 2019,\n  \"genero\": \"Suspense\",\n  \"nota\": 9.0\n}"
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/filmes/3",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "filmes",
+                "3"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "ERRO - Atualizar id inexistente (id=999)",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"titulo\": \"Teste\",\n  \"diretor\": \"Diretor\",\n  \"ano\": 2020,\n  \"genero\": \"Drama\",\n  \"nota\": 7.0\n}"
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/filmes/999",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "filmes",
+                "999"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "ERRO - Campos ausentes no PUT",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{}"
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/filmes/1",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "filmes",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "DELETE",
+      "item": [
+        {
+          "name": "Deletar filme id=10",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/filmes/10",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "filmes",
+                "10"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Deletar filme id=9",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/filmes/9",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "filmes",
+                "9"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "ERRO - Deletar id inexistente (id=999)",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/filmes/999",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "filmes",
+                "999"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ],
+  "variable": [
+    {
+      "key": "base_url",
+      "value": "http://localhost:3000",
+      "type": "string"
+    }
+  ]
+}
