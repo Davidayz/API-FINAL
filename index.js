@@ -18,7 +18,7 @@ db.exec(`
 `);
 
 app.get('/api/filmes', (req, res) =>{
-    const{ genero, titulo, nota_min, ordem, direcao, pagina = 1, limite = 20 } = req.query;
+    const{ genero, titulo, nota_min, ordem, direcao, pagina = 1, limite = 10 } = req.query;
 
     let query = 'SELECT * FROM filmes WHERE 1=1';
     const params = [];
