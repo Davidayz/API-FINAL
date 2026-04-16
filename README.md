@@ -1,6 +1,6 @@
 # api-final
 
-## Instalacao
+## Instalação
 
 ```bash
 npm install express better-sqlite3
@@ -41,7 +41,7 @@ Estrutura da tabela:
 
 ### GET /api/filmes
 
-Retorna a lista de filmes. Suporta filtros, ordenacao e paginacao.
+Retorna a lista de filmes. Suporta filtros, ordenação e paginação.
 
 | Parametro | Tipo   | Descricao                                      | Exemplo          |
 |-----------|--------|------------------------------------------------|------------------|
@@ -210,7 +210,7 @@ Resposta 404: `{ "erro": "Filme nao encontrado" }`
 
 ---
 
-## Validacoes (POST e PUT)
+## Validações (POST e PUT)
 
 | Campo   | Regra                      |
 |---------|----------------------------|
